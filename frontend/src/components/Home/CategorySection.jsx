@@ -11,9 +11,9 @@ const CategorySection = () => {
   return (
     <>
       <section className="xl:px-14 px-4 py-6 xl:py-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2  xl:gap-8">
-          <div className="col-span-2 relative">
-            <div className="bg-[#0D0D0D] px-4 xl:px-6 pt-4 xl:pt-6 pb-8 xl:pb-16 rounded-xl ">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2  ">
+          <div className="col-span-2  h-[179px] xl:h-[328px] relative">
+            <div className="bg-[#0D0D0D] h-full px-4 xl:px-6 pt-4 xl:pt-6 pb-8 xl:pb-16 rounded-xl ">
               <p className="text-[#eee] text-[10px] xl:text-[18px]">
                 Work Smart
               </p>
