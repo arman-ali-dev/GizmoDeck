@@ -56,15 +56,15 @@ const loginHandler = async (req, res) => {
   try {
     const { email, password } = req.body;
 
-    if (!email || !password)
+    if (!email || !password) {
       return res
         .status(400)
         .json({ status: "error", message: "All fields are required!" });
-
+    }
     const user = await User.findOne({ email });
 
     if (!user)
-      return resdfkArman
+      return res
         .status(401)
         .json({ status: "error", message: "User not found with this email!" });
 

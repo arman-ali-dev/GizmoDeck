@@ -14,8 +14,10 @@ import Cart from "./pages/Cart";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Search from "./pages/Search";
+import useGetAllCategories from "./hooks/useGetAllCategories";
 
 const App = () => {
+  useGetAllCategories();
   return (
     <>
       <Routes>

@@ -6,8 +6,10 @@ import mobileImage from "../../assets/mobile.png";
 import earbudsImage from "../../assets/earbuds.png";
 import watchImage from "../../assets/smart-watch.png";
 import headphonesImage from "../../assets/headphones.png";
+import { useSelector } from "react-redux";
 
 const CategorySection = () => {
+  const { categories } = useSelector((state) => state.category);
   return (
     <>
       <section className="xl:px-14 px-4 py-6 xl:py-10">

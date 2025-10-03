@@ -5,6 +5,7 @@ const database = require("./config/db");
 const cors = require("cors");
 const authRouter = require("./routers/authRouter");
 const productRouter = require("./routers/productRouter");
+const categoryRouter = require("./routers/categoryRouter");
 
 const port = process.env.PORT || 5000;
 
@@ -13,7 +14,7 @@ database();
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "http://localhost:5174",
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true,
   })
@@ -24,6 +25,7 @@ app.get("/health-check", (_, res) =>
 );
 
 app.use("/api/auth", authRouter);
+app.use("/api/categories", categoryRouter);
 app.use("/api/products", productRouter);
 
 app.listen(port, () => console.log(`App is listening on port: ${port}`));
