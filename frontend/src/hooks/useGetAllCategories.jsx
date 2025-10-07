@@ -12,6 +12,8 @@ const useGetAllCategories = () => {
         "http://localhost:8080/api/categories/all"
       );
 
+      console.log(data);
+
       dispatch(setCategories(data.categories));
     } catch (error) {
       console.error(

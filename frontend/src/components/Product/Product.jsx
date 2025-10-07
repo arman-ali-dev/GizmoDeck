@@ -75,7 +75,7 @@ const Product = () => {
               fullWidth
               variant="contained"
               sx={{
-                textTransform: "capitalize",
+                textTransform: "capitalize",T
                 paddingY: { xs: "7px", md: 1 },
                 fontSize: { xs: "10px", md: "16px" },
                 backgroundColor: "var(--primary-color)",
