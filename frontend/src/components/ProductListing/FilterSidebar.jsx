@@ -28,7 +28,7 @@ const FilterSidebar = ({ showSidebar, setShowSidebar }) => {
         className={` bg-white px-5 xl:px-0 fixed top-0  z-[9999] xl:z-[0] h-full left-0 xl:relative overflow-y-auto duration-300 w-[90%] sm:w-[60%] md:w-[50%] ${
           showSidebar ? "translate-x-0  " : "-translate-x-full"
         } 
-        xl:translate-x-0 xl:w-[20%]"`}
+        xl:translate-x-0 xl:w-[30%]"`}
       >
         {/* Header with Close Button (visible only on mobile) */}
         <div className="flex justify-between items-center py-3 border-b-[2px] xl:hidden">
